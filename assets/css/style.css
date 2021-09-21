@@ -112,3 +112,19 @@ button:hover p {
     transform: rotate(-3deg);
     }
 }
+
+/*hands*/
+.hands img{
+   width: 200px;
+   height: 200px;
+   display: block;
+}
+
+.hands .hand {
+    cursor: pointer;
+    transition: all 0.30s;
+}
+
+.hands .hand:hover {
+    transform: translate3d(0px, -8px, 0px);
+}

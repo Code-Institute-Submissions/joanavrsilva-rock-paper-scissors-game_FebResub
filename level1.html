@@ -25,43 +25,48 @@
     <div class="score">
         <table>
             <tr>
-                <th>Your score</th>
-                <th>Computer score</th>
+                <th class="your-score">Your score</th>
+                <th class="computer-score">Computer score</th>
             </tr>
             <tr>
-                <td class="score-results"></td>
-                <td class="score-results"></td>
+                <td class="score-results" id="user-score">0</td>
+                <td class="score-results" id="computer-score">0</td>
             </tr>
         </table>
     </div>
 
         <!--game area-->
-        <table class="hands">
+        <table class="hands" id="hands">
             <tr>
-                <th>
-                    <img src="assets/images/hand-paper.png">
+                <th class="score-results">
+                    <img src="assets/images/hand-paper.png" onclick="userHand('paper',1)" class="hand" alt="paper">
                 </th>
-                <th>
-                    <img src="assets/images/hand-scissors.png">
+                <th class="score-results">
+                    <img src="assets/images/hand-scissors.png" onclick="userHand('scissors',1)" class="hand" alt="scissors">>
                 </th>
-                <th>
-                    <img src="assets/images/hand-rock.png">
+                <th class="score-results">
+                    <img src="assets/images/hand-rock.png" onclick="userHand('rock',1)" class="hand" alt="rock">>
                 </th>
             </tr>
         </table>
 
         <!--User and computer choices-->
-            <table class="results">
+            <table class="results" id="results">
                 <tr>
-                    <th>Your choice</th>
-                    <th>Computer choice</th>
+                    <th class="your-score">Your choice</th>
+                    <th class="computer-score">Computer choice</th>
                 </tr>
                 <tr>
                     <td class="score-results">
-                        <img src="assets/images/hand-paper.png">
+                        <img src="assets/images/hand-paper.png" class="hand" id="image-user-pick" alt="score-results">
                     </td>
-                    <td></td>
-                    <td></td>
+                    <td class="score-results">
+                    <h1 class="decision">You win this round</h1>
+                    <button class="button-level1" onclick="restartGame()">Play Again</button>
+                </td>
+                    <td class="score-results">
+                        <img src="assets/images/hand-rock.png" class="hand" id="image-computer-pick" alt="score-results">
+                    </td>
                 </tr>
             </table>
         </div>
