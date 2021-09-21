@@ -6,7 +6,7 @@ const handOptions = {
     'paper': "assets/images/hand-paper.png",
     'scissors': "assets/images/hand-scissors.png",
     'spock': "assets/images/hand-spock.png",
-    'lizard': "assets/images/lizard.png",
+    'lizard': "assets/images/hand-lizard.png",
 }
 
 // Winning matches
@@ -20,8 +20,8 @@ const handwins = {
 };
 
 // Score variables
-let score = 0;
-let scoreComputer = 0;
+let userScore = 0;
+let computerScore = 0;
 
 // Get hands options
 var hands = document.getElementById("hands");
@@ -119,3 +119,29 @@ const setScore = (newScore, id) => {
 document.getElementById(id).innerText = newScore;
 };
 // end -- play & score Functions
+
+
+// get necessary Pop-up elements
+//  get the Pop-up
+var gameOverPopUp = document.getElementById("gameOverPopUp");
+
+// get the <span> element that redirects the player home
+var goHomeLink = document.getElementsByClassName("goHome")[0];
+
+// get Image you Lose
+var youLoseImg = document.getElementById("youLoseImg");
+
+// get Image you Win
+var youWinImg = document.getElementById("youWinImg");
+
+//if error occurrs ignore
+try {
+  // go Home function
+  goHomeLink.onclick = function() {
+    gameOverPopUp.style.display = "none";
+    window.location.href = "index.html";
+  };
+}
+catch (e) {
+  //not in the correct page--ignore
+};

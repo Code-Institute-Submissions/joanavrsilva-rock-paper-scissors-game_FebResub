@@ -15,6 +15,15 @@
     <title>Rock Paper Scissors Game</title>
 </head>
 <body>
+    <header>
+        <!--nav menu-->
+        <nav>
+           <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="how-play.html">How to play</a></li>
+           </ul>
+        </nav>
+     </header>
 
     <!--Level 1-->
     <div>
@@ -71,6 +80,20 @@
             </table>
         </div>
     </div>
+   <!-- pop-up image after 3 points in the scoreboard -->
+   <div id="gameOverPopUp" class="gameOverPopUp">
+
+    <!-- modal content -->
+    <div class="gameOverPopUp-content">
+        <span class="goHome">Home</span>
+
+          <!-- you lose Pop-up elements -->
+          <img id="youLoseImg" src="assets/images/youLose.png" class="youLose centerPopUp" alt="youLoseImg" >
+        
+         <!--pop-up button for play level 1 or level 2-->
+          <img id="youWinImg" src="assets/images/youWin.png" class="youWin centerPopUp" alt="youWinImg">
+         <button class="button-level1 centerPopUp" onclick="location.href='level1.html'">Play Level 1 </button>
+         <button class="button-level2 centerPopUp" onclick ="location.href='level2.html'">Play Level 2 </button>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
