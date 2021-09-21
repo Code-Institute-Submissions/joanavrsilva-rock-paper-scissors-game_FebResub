@@ -15,27 +15,72 @@
     <title>Rock Paper Scissors Game</title>
 </head>
 <body>
-    <!--game area-->
-    <table class="hands">
+
+    <!--level 2 title-->
+    <div class="title">
+    <H1>Rock Paper Scissors Game - Level 2</H1>
+    </div>
+
+    <!--score area-->
+    <div class="score">
+    <table class="table-score">
         <tr>
-            <th>
-                <img src="assets/images/hand-paper.png">
-            </th>
-            <th>
-                <img src="assets/images/hand-scissors.png">
-            </th>
-            <th>
-                <img src="assets/images/hand-rock.png">
-            </th>
-            <th>
-                <img src="assets/images/hand-lizard.png">
-            </th>
-            <th>
-                <img src="assets/images/thinking.png">
-            </th>
-            <th>
-                <img src="assets/images/hand-spock.png">
-            </th>
+            <th class="your-score">Your score</th>
+            <th class="computer-score">Computer Score</th>
+    </tr>
+        <tr>
+            <td class="score-results" id="scoreUser">0</td>
+            <td class="score-results" id="scoreCP">0</td>
+        </tr>
+    </table>
+    </div>
+
+
+
+    <!--game area-->
+    <table class="hands" id="hands">
+        <tr>
+        <td class="hands-option">
+            <img src="assets/images/hand-paper.png" onclick="userHand('paper',2)" title="paper" class="hand" alt="hands-option">
+        </td>
+        <td class="hands-option">
+            <img src="assets/images/hand-scissors.png" onclick="userHand('scissors',2)" title="scissors" class="hand" alt="hands-option">
+        </td>
+        <td class="hands-option">
+            <img src="assets/images/hand-rock.png" onclick="userHand('rock',2)" title="rock" class="hand" alt="hands-option">
+        </td>
+        </tr>
+        <tr>
+        <td class="hands-option">
+            <img src="assets/images/hand-lizard.png" onclick="userHand('lizard',2)" title="lizard" class="hand" alt="hands-option">
+        </td>
+        <td class="hands-option">
+            <img src="assets/images/thinking.png" alt="hands-option">
+        </td>
+        <td class="hands-option">
+            <img src="assets/images/hand-spock.png" onclick="playUserHand('spock',2)" title="spock" class="hand" alt="hands-option">
+        </td>
+        </tr>
+    </table>
+        
+        <!--the user and the computer choices-->
+    <table class="results" id="results">
+        <tr>
+        <th class="your-score">Your choice</th>
+        <th ></th>
+        <th class="computer-score">Computer choice</th>
+        </tr>
+        <tr>
+        <td class="score-results">
+            <img src="assets/images/Paper.png" title="paper" class="hand" id="userPickImage" alt="score-results">
+        </td>
+        <td class="score-results">
+            <h1 class="decision">You win this round</h1>
+                <button class="button-level2 centerPopUp" onclick="restartGame()">Play again</button>
+        </td>
+        <td class="score-results">
+            <img src="assets/images/Rock.png" title="rock" class="hand" id="computerPickImage" alt="score-results">
+        </td>
         </tr>
     </table>
     <script src="assets/js/script.js"></script>
