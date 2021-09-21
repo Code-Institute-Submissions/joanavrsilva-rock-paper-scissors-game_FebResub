@@ -39,7 +39,28 @@ body {
     border-bottom: 2px solid white
 }
 
+.home-levels {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 80px;
+    font-size: large;
+    width: 100%;
+    display: block;
+}
 /* Buttons */
+button {
+    cursor: pointer;
+    position: relative;
+    padding: 1rem 4rem;
+    border-radius: 2.75rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+  color:white
+}
+
 .button-level1 {
 border: 1px solid rgb(221, 122, 140);
 background-image: linear-gradient(-180deg, rgb(222, 65, 93) 0%, rgb(177, 38, 63) 100%);
