@@ -38,47 +38,47 @@ hands.style.display = "none";
 results.style.visibility = "visible";
 
 // set user Image
-userPick.src = handOptions[hand];
+userChoice.src = handOptions[hand];
 
-// select function depending on the Level to choose CpHand randomly
+// select function depending on the Level to choose Computer Hand randomly
 if (Level==1){
-    cpHand = pickComputerHandL1();
+    computerHand = choiceComputerHandL1();
 } else{
-    cpHand = pickComputerHandL2();
+    computerHand = choiceComputerHandL2();
 }
 
-    referee(hand, cpHand);
+    referee(hand, computerHand);
 };
 
 //randomely choose cp hand L1
-const pickComputerHandL1 = () => {
+const choiceComputerHandL1 = () => {
 let handsOpts = ['rock', 'paper', 'scissors'];
-let cpHand = handsOpts[Math.floor(Math.random() * handsOpts.length)];
+let computerHand = handsOpts[Math.floor(Math.random() * handsOpts.length)];
 
 // set computer image accordingly
-cpPick.src = handOptions[cpHand];
+computerChoice.src = handOptions[computerHand];
 
-return cpHand;
+return computerHand;
 };
 
 //randomely choose cp hand L2
-const pickComputerHandL2 = () => {
+const choiceComputerHandL2 = () => {
 let handsOpts = ['rock', 'paper', 'scissors', 'spock', 'lizard'];
-let cpHand = handsOpts[Math.floor(Math.random() * handsOpts.length)];
+let computerHand = handsOpts[Math.floor(Math.random() * handsOpts.length)];
 
 // set computer image accordingly
-cpPick.src = handOptions[cpHand];
+computerChoice.src = handOptions[computerHand];
 
-return cpHand;  
+return computerHand;  
 };
 
 // result - tie, win and lose;
 const referee = (userHand, computerHand) => {
 
-if (userHand == cpHand) {
+if (userHand == computerHand) {
     setDecision("It's a tie!","none");
 }
-else if (handWins[userHand].includes(cpHand)){
+else if (handWins[userHand].includes(computerHand)){
     setDecision("You win this round!","your-score");
     SCORE=SCORE + 1;
     setScore(SCORE,"userScore");
@@ -92,8 +92,8 @@ else if (handWins[userHand].includes(cpHand)){
 }
 else {
     setDecision("Computer wins this round","computer-score");
-    SCORECP=SCORECP + 1;
-    setScore(SCORECP,"computerScore");
+    computerScore=computerScore + 1;
+    setScore(computerScore,"computerScore");
 
     //Display final pop-up - You lose - Limit 3 rounds
     if(SCORECP==3){

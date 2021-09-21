@@ -129,6 +129,12 @@ button:hover p {
     transform: translate3d(0px, -8px, 0px);
 }
 
+.hands-option {
+    padding: 25px 0px 25px 0px;
+    border-radius: 8px;
+    background-color: white;
+}
+
 /*score*/
 .scoreboard {
     width: 700px;
