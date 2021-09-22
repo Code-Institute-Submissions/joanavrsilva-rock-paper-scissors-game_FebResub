@@ -1,32 +1,3 @@
-
-// start -- Pop-up getting elemenets & necessary functions
-
-// get necessary Pop-up elements
-//  get the Pop-up
-var gameOverPopUp = document.getElementById("gameOverPopUp");
-
-// get the <span> element that redirects the player home
-var goHomeLink = document.getElementsByClassName("goHome")[0];
-
-// get Image you Lose
-var youLoseImg = document.getElementById("youLoseImg");
-
-// get Image you Win
-var youWinImg = document.getElementById("youWinImg");
-
-//if error occurrs ignore
-try {
-  // go Home function
-  goHomeLink.onclick = function() {
-    gameOverPopUp.style.display = "none";
-    window.location.href = "index.html";
-  };
-}
-catch (e) {
-  //not in the correct page--ignore
-};
-// star -- Play & Score Functions
-
 // images
 const handOptions = {
   'rock': "assets/images/hand-rock.png",
@@ -78,7 +49,7 @@ const playUserHand = (hand, Level) => {
     referee(hand, cpHand);
 };
 
-//randomely choose cp hand L1
+//randomly choose cp hand L1
 const pickComputerHandL1 = () => {
   let handsOpts = ['rock', 'paper', 'scissors'];
   let cpHand = handsOpts[Math.floor(Math.random() * handsOpts.length)];
@@ -89,7 +60,7 @@ const pickComputerHandL1 = () => {
   return cpHand;
 };
 
-//randomely choose cp hand L2
+//randomly choose cp hand L2
 const pickComputerHandL2 = () => {
   let handsOpts = ['rock', 'paper', 'scissors', 'spock', 'lizard'];
   let cpHand = handsOpts[Math.floor(Math.random() * handsOpts.length)];
@@ -131,6 +102,34 @@ const referee = (userHand, cpHand) => {
   }
 };
 
+//Pop-up getting elements & necessary functions
+
+// get necessary Pop-up elements
+//  get the Pop-up
+var gameOverPopUp = document.getElementById("gameOverPopUp");
+
+// get the <span> element that redirects the player home
+var goHomeLink = document.getElementsByClassName("goHome")[0];
+
+// get Image you Lose
+var youLoseImg = document.getElementById("youLoseImg");
+
+// get Image you Win
+var youWinImg = document.getElementById("youWinImg");
+
+//if error occurrs ignore
+try {
+  // go Home function
+  goHomeLink.onclick = function() {
+    gameOverPopUp.style.display = "none";
+    window.location.href = "index.html";
+  };
+}
+catch (e) {
+  //not in the correct page--ignore
+};
+//Play & Score Functions
+
 //function to restart game
 const restartGame = () => {
   results.style = "results";
@@ -146,9 +145,8 @@ const setDecision = (decision, style) => {
 const setScore = (newScore, id) => {
   document.getElementById(id).innerText = newScore;
 };
-// end -- play & score Functions
 
-// How to play instructions //
+// How to play window open instructions //
 function level1Instructions() {
   window.open("https://www.wikihow.com/Play-Rock,-Paper,-Scissors");
 }

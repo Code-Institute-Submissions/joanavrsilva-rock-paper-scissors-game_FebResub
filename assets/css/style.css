@@ -68,7 +68,7 @@
   }
   
   /* button for each hand and for level 1 and 2*/
-  /*I inspired myself in codepen.io for the buttons for level 1 and level 2*/
+  /*I inspired myself in codepen.io for the buttons*/
 
   .button-play-again {
   	cursor: pointer;
@@ -177,27 +177,6 @@
 .how-play-level-link {
   color:white;
   text-align:center;
-}
-
-/** wrapper**/
-.wrapper {
-  flex-direction: column;
-  align-items: center;
-  padding-top: 80px;
-  height: 100px;
-  background: #2b2e53;
-  text-align: center;
-  color: #2b2e53;
-  text-align: center;
-  margin-top: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:33%;
-}
-
-.wrapper h1 {
-  color: white
 }
 
  /* scoreboard */
@@ -505,14 +484,14 @@
   .computer-score {
     padding: 0 10px 0 10px;
   }
-.how-play p {
+  .how-play p {
   font-size: 15px;
   margin-right: 30px
-}
+  }
 
-.how-play img {
+  .how-play img {
   width: 100px
-}
+  }
 
 }
 
@@ -521,18 +500,16 @@
   .contest {
     width:500px;
   }
+
   .contest img {
     width:200px;
-  }
-  .wrapper {
-    margin-left:30px;
   }
 
   .center {
     width:300px
   }
 
-.how-play h1, h2 {
+  .how-play h1, h2 {
   margin-top: 50px
-}
+  }
 }
