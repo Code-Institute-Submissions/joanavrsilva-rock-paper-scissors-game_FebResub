@@ -150,9 +150,9 @@ const setScore = (newScore, id) => {
 
 // How to play instructions //
 function level1Instructions() {
-  window.open("http://www.google.com/");
+  window.open("https://www.wikihow.com/Play-Rock,-Paper,-Scissors");
 }
 
-function leve21Instructions() {
-  window.open("http://www.google.com/");
+function level2Instructions() {
+  window.open("https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/");
 }

@@ -13,7 +13,7 @@
 
   .title {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 60px;
     color: white
   }
 
@@ -58,7 +58,6 @@
   }
 
   .centerPopUp {
-    margin-left: 33%;
     margin-top: 20px;
   }
 
@@ -114,6 +113,18 @@
 							0 -0.25rem 0.75rem rgb(216, 203, 206) inset,
 							0 0.75rem 0.75rem rgb(216, 203, 206) inset,
 							0 0.25rem 0.75rem 0 rgb(216, 203, 206)inset;
+  }
+
+  .button-instructions {
+  	cursor: pointer;
+	  position: relative;
+    padding: 1rem 4rem;
+    border-radius: 2.75rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color:black;
+    margin-bottom: 20px;
   }
 
   button span {
@@ -431,21 +442,21 @@
 
   .youLose {
     display: none; /*start hidden*/
-    width: 50%;
-    height: 50%;
+    width: 120px;
+    height: 120px;
   }
 
   .youWin {
     display: none; /*start hidden*/
-    width: 50%;
-    height: 50%;
+    width: 120px;
+    height: 120px;
   }
   
 /*media queries for mobiles view*/
   @media only screen and (max-width: 480px) {
   
   .how-play {
-    margin-left:20px
+    margin-left:10px
   }
   .scoreboard {
       width: 100%;
@@ -468,8 +479,8 @@
   }
 
   .score-results img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
   .your-score {
     font-size: smaller;
@@ -482,9 +493,18 @@
    .decision{
     font-size:small;
   }
-.title {
-  font-size:larger
-}
+
+  .button-play-again {
+    padding: 15px;
+  }
+
+  .your-score {
+    padding: 0 25px 0 25px;
+  }
+
+  .computer-score {
+    padding: 0 10px 0 10px;
+  }
 .how-play p {
   font-size: 15px;
   margin-right: 30px
@@ -511,10 +531,6 @@
   .center {
     width:300px
   }
-
-  .centerhp {
-    font-size:xx-large;
-}
 
 .how-play h1, h2 {
   margin-top: 50px
