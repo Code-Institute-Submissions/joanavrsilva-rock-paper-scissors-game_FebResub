@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,92 +17,103 @@
 </head>
 <body>
 
-    <!--level 2 title-->
-    <div class="title">
-    <H1>Rock Paper Scissors Game - Level 2</H1>
-    </div>
+    <header>
+        <!--nav menu-->
+        <nav>
+           <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="how-play.html">How to play</a></li>
+           </ul>
+        </nav>
+     </header>
 
-    <!--score area-->
-    <div class="score">
-    <table class="table-score">
-        <tr>
-            <th class="your-score">Your score</th>
-            <th class="computer-score">Computer Score</th>
-    </tr>
-        <tr>
-            <td class="score-results" id="userScore">0</td>
-            <td class="score-results" id="computerScore">0</td>
+     <!--level 1 title-->
+     <div class="title">
+        <H1>Rock Paper Scissors Game - Level 2</H1>
+     </div>
+
+     <!--score area-->
+     <div class="score">
+        <table class="table-score">
+           <tr>
+              <th class="your-score">Your score</th>
+              <th class="computer-score">Computer Score</th>
         </tr>
-    </table>
-    </div>
+           <tr>
+              <td class="score-results" id="scoreUser">0</td>
+              <td class="score-results" id="scoreCP">0</td>
+           </tr>
+        </table>
+     </div>
 
-
-
-    <!--game area-->
-    <table class="hands" id="hands">
+        <!--game area-->
+     <table class="hands" id="hands">
         <tr>
-        <td class="hands-option">
-            <img src="assets/images/hand-paper.png" onclick="userHand('paper',2)" title="paper" class="hand" alt="hands-option">
-        </td>
-        <td class="hands-option">
-            <img src="assets/images/hand-scissors.png" onclick="userHand('scissors',2)" title="scissors" class="hand" alt="hands-option">
-        </td>
-        <td class="hands-option">
-            <img src="assets/images/hand-rock.png" onclick="userHand('rock',2)" title="rock" class="hand" alt="hands-option">
-        </td>
+           <td class="hands-option">
+              <img src="assets/images/hand-paper.png" onclick="playUserHand('paper',2)" title="paper" class="hand" alt="hands-option">
+           </td>
+           <td class="hands-option">
+              <img src="assets/images/hand-scissors.png" onclick="playUserHand('scissors',2)" title="scissors" class="hand" alt="hands-option">
+           </td>
+           <td class="hands-option">
+              <img src="assets/images/hand-rock.png" onclick="playUserHand('rock',2)" title="rock" class="hand" alt="hands-option">
+           </td>
         </tr>
         <tr>
-        <td class="hands-option">
-            <img src="assets/images/hand-lizard.png" onclick="userHand('lizard',2)" title="lizard" class="hand" alt="hands-option">
-        </td>
-        <td class="hands-option">
-            <img src="assets/images/thinking.png" alt="hands-option">
-        </td>
-        <td class="hands-option">
-            <img src="assets/images/hand-spock.png" onclick="userHand('spock',2)" title="spock" class="hand" alt="hands-option">
-        </td>
+           <td class="hands-option">
+              <img src="assets/images/hand-lizard.png" onclick="playUserHand('lizard',2)" title="lizard" class="hand" alt="hands-option">
+           </td>
+           <td class="hands-option">
+              <img src="assets/images/thinking.png" alt="hands-option">
+           </td>
+           <td class="hands-option">
+              <img src="assets/images/hand-spock.png" onclick="playUserHand('spock',2)" title="spock" class="hand" alt="hands-option">
+           </td>
         </tr>
-    </table>
+     </table>
+        <!--/div-->
         
         <!--the user and the computer choices-->
-    <table class="results" id="results">
+     <table class="results" id="results">
         <tr>
-        <th class="your-score">Your choice</th>
-        <th ></th>
-        <th class="computer-score">Computer choice</th>
+           <th class="your-score">Your choice</th>
+           <th ></th>
+           <th class="computer-score">Computer choice</th>
+           </tr>
+           <tr>
+           <td class="score-results">
+              <img src="assets/images/hand-paper.png" title="paper" class="hand" id="userPickImage" alt="score-results">
+           </td>
+           <td class="score-results">
+              <h1 class="decision">You win this round</h1>
+                 <button class="button-level2 centerPopUp" onclick="restartGame()">Play again</button>
+           </td>
+           <td class="score-results">
+              <img src="assets/images/hand-rock.png" title="rock" class="hand" id="computerPickImage" alt="score-results">
+           </td>
         </tr>
-        <tr>
-        <td class="score-results">
-            <img src="assets/images/hand-paper.png" title="paper" class="hand" id="userChoiceImage" alt="score-results">
-        </td>
-        <td class="score-results">
-            <h1 class="decision">You win this round</h1>
-                <button class="button-level2 centerPopUp" onclick="restartGame()">Play again</button>
-        </td>
-        <td class="score-results">
-            <img src="assets/images/hand-rock.png" title="rock" class="hand" id="computerChoiceImage" alt="score-results">
-        </td>
-        </tr>
-    </table>
-    <!-- pop-up image after 3 points in the scoreboard -->
-    <div id="gameOverPopUp" class="gameOverPopUp">
+     </table>
+     
+     <!-- pop-up image after 3 points in the scoreboard -->
+     <div id="gameOverPopUp" class="gameOverPopUp">
 
-    <!-- modal content -->
-    <div class="gameOverPopUp-content">
+     <!-- modal content -->
+     <div class="gameOverPopUp-content">
         <span class="goHome">Home</span>
 
         <!-- you lose Pop-up elements -->
         <img id="youLoseImg" src="assets/images/youLose.png" class="youLose centerPopUp" alt="youLoseImg">
-            
+           
         <!-- you win Pop-up elements -->
         <img id="youWinImg" src="assets/images/youWin.png" class="youWin centerPopUp" alt="youWinImg">
-            
+             
         <!--pop-up button for play level 1 or level 2-->
         <button class="button-level1 centerPopUp" onclick="location.href='level1.html'">Play Level 1 </button>
         <button class="button-level2 centerPopUp" onclick ="location.href='level2.html'">Play Level 2 </button>
 
         </div>
-    </div>
-    <script src="assets/js/script.js"></script>
-</body>
+     </div>
+
+     <script src="assets/js/script.js"></script>
+  </body>
 </html>

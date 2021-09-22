@@ -1,56 +1,88 @@
 /* Global styles*/
+
 * {
     padding: 0;
     margin: 0;
-    border: none;
-}
+    box-sizing: border-box;
+  }
 
-body {
-    background-color: #2b2e53;
-    font-family: 'Roboto', sans-serif;
-    color:white;
-}
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color:#2b2e53;
+  }
 
-/* Navigation bar*/
-#nav-bar {
+  .title {
+    text-align: center;
+    padding-top: 80px;
+    color: white
+  }
+
+/*bar navigation menu*/  
+  #menu {
     font-size: 100%;
     letter-spacing: 3px;
     float: right;
-    margin-top: 20px;
     color: white;
-}
+    margin-top: 20px;
+  }
 
-#nav-bar li {
-    list-style: none;
+  #menu, #logo {
+    line-height: 20px;
+  }
+
+  #menu li {
+    list-style-type: none;
     margin-right: 30px;
     float:left;
-}
+  }
 
-#nav-bar a {
-    color:white;
+  #menu a {
     text-decoration: none;
-}
+    color:white;
+  }
 
-#nav-bar a:hover {
+  #menu a:hover {
     color: rgb(254,208,0);
-}
+  }
 
-.active {
-    border-bottom: 2px solid white
-}
+  .active {
+  border-bottom: 2px solid white;
+  }
 
-.home-levels {
-    text-align: center;
-    color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 80px;
-    font-size: large;
-    width: 100%;
+  /*buttons level 1 and 2 and pop up*/ 
+  .center {
     display: block;
-}
-/* Buttons */
-button {
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+  }
+
+  .centerPopUp {
+    margin-left: 33%;
+    margin-top: 20px;
+  }
+
+  .centerhp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* button for each hand and for level 1 and 2*/
+  /*I inspired myself in codepen.io for the buttons for level 1 and level 2*/
+
+  .button-play-again {
+  	cursor: pointer;
+	position: relative;
+    padding: 1rem 4rem;
+    border-radius: 2.75rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color:black
+  }
+
+  .button-level1 {
     cursor: pointer;
     position: relative;
     padding: 1rem 4rem;
@@ -58,113 +90,135 @@ button {
     line-height: 1rem;
     font-size: 1rem;
     font-weight: 400;
-  color:white
-}
+    color:white;
+    border: 1px solid rgb(221, 122, 140);
+	  background-image: linear-gradient(-180deg, rgb(222, 65, 93) 0%, rgb(177, 38, 63) 100%);
+	  box-shadow: 0 0.5rem 0.75rem 0 rgb(216, 203, 206),
+							0 -0.25rem 0.75rem rgb(216, 203, 206) inset,
+							0 0.75rem 0.75rem rgb(216, 203, 206) inset,
+							0 0.25rem 0.75rem 0 rgb(216, 203, 206)inset;
+  }
 
-.button-level1 {
-border: 1px solid rgb(221, 122, 140);
-background-image: linear-gradient(-180deg, rgb(222, 65, 93) 0%, rgb(177, 38, 63) 100%);
-box-shadow: 0 0.5rem 0.75rem 0 rgb(216, 203, 206),
-            0 -0.25rem 0.75rem rgb(216, 203, 206) inset,
-            0 0.75rem 0.75rem rgb(216, 203, 206) inset,
-            0 0.25rem 0.75rem 0 rgb(216, 203, 206)inset;
-}
+  .button-level2 {
+    cursor: pointer;
+    position: relative;
+    padding: 1rem 4rem;
+    border-radius: 2.75rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color:white;
+    border: 1px solid rgb(163, 231, 174) ;
+	  background-image: linear-gradient(-180deg, rgb(84, 130, 53) 0%, rgb(84, 130, 53) 100%);
+	  box-shadow: 0 0.5rem 0.75rem 0 rgb(216, 203, 206),
+							0 -0.25rem 0.75rem rgb(216, 203, 206) inset,
+							0 0.75rem 0.75rem rgb(216, 203, 206) inset,
+							0 0.25rem 0.75rem 0 rgb(216, 203, 206)inset;
+  }
 
-.button-level2 {
-border: 1px solid rgb(163, 231, 174) ;
-background-image: linear-gradient(-180deg, rgb(84, 130, 53) 0%, rgb(84, 130, 53) 100%);
-box-shadow: 0 0.5rem 0.75rem 0 rgb(216, 203, 206),
-            0 -0.25rem 0.75rem rgb(216, 203, 206) inset,
-            0 0.75rem 0.75rem rgb(216, 203, 206) inset,
-            0 0.25rem 0.75rem 0 rgb(216, 203, 206)inset;
-}
-
-button span {
+  button span {
     color: transparent;
     background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
     filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
   }
 
-button:hover {
-animation: .8s morph ease infinite;
-}
+  button:hover {
+    animation: .8s morph ease infinite;
+  }
 
-button:hover p {
-    animation: .8s rot ease infinite;
-}
+  button:hover p {
+	  animation: .8s rot ease infinite;
+  }
 
-@keyframes morph {
-    0% {
-    border-radius: 100px 30px 100px 30px;
-    } 50% {
-    border-radius: 30px 100px 30px 100px;
-    } 100% {
-    border-radius: 100px 30px 100px 30px;
-    }
+  @keyframes morph {
+	0% {
+		border-radius: 100px 30px 100px 30px;
+	} 50% {
+		border-radius: 30px 100px 30px 100px;
+	} 100% {
+		border-radius: 100px 30px 100px 30px;
+	}
 }
 
 @keyframes rot {
-    0% {
-    transform: rotate(-3deg);
-    } 50% {
-    transform: rotate(3deg);
-    } 100% {
-    transform: rotate(-3deg);
-    }
+	0% {
+		transform: rotate(-3deg);
+	} 50% {
+		transform: rotate(3deg);
+	} 100% {
+		transform: rotate(-3deg);
+	}
 }
 
-/*hands*/
-.hands img{
-   width: 200px;
-   height: 200px;
-   display: block;
+/*how to play rock paper scissors game*/
+.how-play {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  padding-top: 80px;
+  font-size: large;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
 }
 
-.hands .hand {
-    cursor: pointer;
-    transition: all 0.30s;
+.how-play-level-link {
+  color:white;
+  text-align:center;
 }
 
-.hands .hand:hover {
-    transform: translate3d(0px, -8px, 0px);
+/** wrapper**/
+.wrapper {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  height: 100px;
+  background: #2b2e53;
+  text-align: center;
+  color: #2b2e53;
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:33%;
 }
 
-.hands-option {
-    padding: 25px 0px 25px 0px;
-    border-radius: 8px;
-    background-color: white;
+.wrapper h1 {
+  color: white
 }
 
-/*score*/
-.scoreboard {
+ /* scoreboard */
+  .scoreboard {
     width: 700px;
     height: 150px;
-    display: flex;
-    justify-content: space-between;
     border-radius: 15px;
     border: 1px solid white;
-    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-.score {
+    margin-top: 70px;
+  }
+  
+  .score {
     border: 10px;
     border-radius: 8px;
     margin-right: 30px;
-    flex-direction: column;
     display: flex;
-    height: 150px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.score h1 {
+    height: 150px;
+  }
+  
+  .score h1 {
     color: #565468;
     font-size: 56px;
     font-family: "Barlow", sans-serif;
-}
+  }
   
-.score p {
+  .score p {
     color: #2a45c2;
     font-size: 16px;
     font-style: normal;
@@ -172,17 +226,17 @@ button:hover p {
     line-height: 19px;
     letter-spacing: 2.5px;
     text-align: left;
-}
+  }
 
-.table-score {
+  .table-score {
     height: 100px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 80px;
     padding-bottom: 20px;
-}
+  }
 
-.your-score {
+  .your-score {
     padding: 0 40px 0 40px;
     text-align: center;
     background-color:rgb(84, 130, 53) ;
@@ -190,9 +244,9 @@ button:hover p {
     color: white;
     border-radius: 8px;
     text-align:center;
-}
+  }
 
-.computer-score {
+  .computer-score {
     padding: 0 25px 0 25px;
     text-align: center;
     background-color:rgb(177, 38, 63);
@@ -200,103 +254,269 @@ button:hover p {
     color: white;
     border-radius: 8px;
     text-align:center;
-}
+  }
 
-.decision {
+  .decision {
     padding: 0 40px 0 40px;
     text-align: center;
     color: white;
     border-radius: 8px;
     text-align:center;
-}
+  }
 
-.score-results {
-    text-align: center;
+  .score-results {
+    padding: 25px 0px 25px 0px;
+    text-align:center;
     border: 1px solid darkblue;
-    text-align: center;
-    background-color: white;
     border-radius: 8px;
-}
+    background-color: white;
+  }
 
- /*results*/
- .results {
-    visibility: hidden;
+  /*hands*/
+  .hands-option {
+    padding: 25px 0px 25px 0px;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .hands {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
-}
+  }
 
-.results td {
+  .hands td {
     margin-left: auto;
     margin-right: auto;
     background-color:#2b2e53;
     border: #2b2e53;;
-}
+  }
 
-.results button {
+  .hands img {
+    width: 200px;
+    height: 200px;
+    display: block;
+  }
+  
+  .hands .hand {
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  
+  .hands .hand:hover {
+    transform: translate3d(0px, -8px, 0px);
+  }
+
+  /*results*/
+  .results {
+    visibility: hidden;
     margin-left: auto;
     margin-right: auto;
-}
+    padding-top: 40px;
+  }
 
-/* the constest between the user and the computer*/
-.contest {
+  .results td {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#2b2e53;
+    border: #2b2e53;;
+  }
+
+  .results button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* the constest between the user and the computer*/
+  .contest {
     display: none;
     margin-top: 50px;
     width: 1100px;
     padding: 250px;
-}
+  }
   
-.contest img {
+  .contest img {
     width: 275px;
     height: 275px;
-}
+  }
   
-.contest > div {
+  .contest > div {
     flex: 1;
-}
+  }
   
-.contest h1 {
+  .contest h1 {
     color: white;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
     text-align: center;
-}
+  }
   
-/*start a new game*/
-.contest .newGame {
+  /*start a new game*/
+  .contest .newGame {
     color: hsl(229, 25%, 31%);
     background-color: white;
     padding: 12px 24px;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.15s;
-}
+  }
   
-.newGame:hover {
+  .newGame:hover {
     background: rgb(218, 218, 218);
     transform: translate3d(0px, -2px, 0px);
-}
+  }
   
-.contest .handImageContainer {
+  .contest .handImageContainer {
     display: flex;
     justify-content: center;
-}
+  }
   
-.referee {
+  .referee {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
   
-.referee h1 {
+  .referee h1 {
     font-size: 45px;
     color: white;
-}
+  }
   
-.computerhand {
+  .computerhand {
     display: flex;
     flex-direction: column;
+  }
+
+
+  /* pop-up */
+  .gameOverPopUp {
+    display: none; /*start hidden*/
+    position: fixed;
+    z-index: 1; /*placed in front*/
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+
+  /* modal Content */
+  .gameOverPopUp-content {
+    background-color: rgb(250, 250, 250);
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 33%;
+  }
+
+  /* the pop up go home button and the win and lose image */
+   .goHome {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .goHome:hover,
+  .goHome:focus {
+    color: rgb(254,208,0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .youLose {
+    display: none; /*start hidden*/
+    width: 50%;
+    height: 50%;
+  }
+
+  .youWin {
+    display: none; /*start hidden*/
+    width: 50%;
+    height: 50%;
+  }
+  
+/*media queries for mobiles view*/
+  @media only screen and (max-width: 480px) {
+  
+  .how-play {
+    margin-left:20px
+  }
+  .scoreboard {
+      width: 100%;
+  }
+  .hands-option img{
+    width: 100px;
+    height: 100px;
+  }
+  .table class {
+    padding:0;
+  }
+  .context {
+    width:100px
+  }
+
+  .score {
+    padding-right:0px;
+    margin-right:20px;
+    margin-left:20px;
+  }
+
+  .score-results img {
+    width: 50px;
+    height: 50px;
+  }
+  .your-score {
+    font-size: smaller;
+    margin-right: 50px;
+  }
+  .computer-score {
+    font-size: smaller;
+    margin-right: 50px;
+  }
+   .decision{
+    font-size:small;
+  }
+.title {
+  font-size:larger
+}
+.how-play p {
+  font-size: 15px;
+  margin-right: 30px
 }
 
+.how-play img {
+  width: 100px
+}
+
+}
+
+/*tablet media queries*/
+@media only screen and (max-width: 768px) {
+  .contest {
+    width:500px;
+  }
+  .contest img {
+    width:200px;
+  }
+  .wrapper {
+    margin-left:30px;
+  }
+
+  .center {
+    width:300px
+  }
+
+  .centerhp {
+    font-size:xx-large;
+}
+
+.how-play h1, h2 {
+  margin-top: 50px
+}
+}

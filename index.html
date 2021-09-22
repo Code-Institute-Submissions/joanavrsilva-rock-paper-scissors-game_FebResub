@@ -18,31 +18,28 @@
 <body>   
     <header>
 
-        <!--Navigation bar-->
-        <nav>
-            <ul id="nav-bar">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="how-to-play.html">How to play</a></li>
-            </ul>
-        </nav>
-    </header>
+ <!--nav menu-->
+ <nav>
+    <ul id="menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="how-play.html">How to play</a></li>
+    </ul> 
+  </nav>
+</header>
 
-    <!--Game title, level images and buttons to play level 1 and level 2-->
-   <div class="home-levels">
-    <div >
-        <h1>Rock Paper Scissors</h1>
+  <!--game title, level images and buttons to play level 1 and level 2-->
+  <div class="how-play">
+    <div class="center">
+      <h1 class="center">Rock Paper Scissors</h1>
+      <img src="assets/images/level1-image.png" alt="level1">
+      <button class="button-level1" onclick="location.href='level1.html'">Play Level 1 </button>
     </div>
-    <div class="home-levels">
-        <img src="assets/images/level1-image.png" akt="level1">
+    <br>
+    <div class="center">
+      <img src="assets/images/level2-image.png" alt="level2">
+      <button class="button-level2" onclick ="location.href='level2.html'">Play Level 2 </button>
     </div>
-        <button class="button-level1" onclick="location.href='level1.html'">Play level 1</button>
-    
-    <div class="home-levels">
-        <img src="assets/images/level2-image.png" alt="level2">
-    </div>
-        <button class="button-level2" onclick="location.href='level2.html'">Play level 2</button>
-    
-    </div>
-    <script src="assets/js/script.js"></script>
+  </div>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
