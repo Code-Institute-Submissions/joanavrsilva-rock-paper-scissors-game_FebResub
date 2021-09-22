@@ -147,3 +147,12 @@ const setScore = (newScore, id) => {
   document.getElementById(id).innerText = newScore;
 };
 // end -- play & score Functions
+
+// How to play instructions //
+function level1Instructions() {
+  window.open("http://www.google.com/");
+}
+
+function leve21Instructions() {
+  window.open("http://www.google.com/");
+}
