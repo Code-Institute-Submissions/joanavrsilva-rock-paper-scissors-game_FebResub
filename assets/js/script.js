@@ -1,4 +1,4 @@
-// images
+// Images
 const handOptions = {
   'rock': "assets/images/hand-rock.png",
   'paper': "assets/images/hand-paper.png",
@@ -7,7 +7,7 @@ const handOptions = {
   'lizard': "assets/images/hand-lizard.png",
 }
 
-// winning matches
+// Winning matches
 const handWins = {
   'rock': ['scissors', 'lizard'],
   'paper': ['rock', 'spock'],
@@ -16,30 +16,30 @@ const handWins = {
   'lizard': ['paper', 'spock']
 };
 
-// score variables
+// Score variables
 let SCORE = 0;
 let SCORECP = 0;
 
-// get gameElements
+// Get gameElements
 
-//get hands options
+// Get hands options
 var hands = document.getElementById("hands");
 
-//get result section elements
+// Get result section elements
 var results = document.getElementById("results");
 var userPick = document.getElementById("userPickImage");
 var cpPick = document.getElementById("computerPickImage");
 
-// main play function
+// Main play function
 const playUserHand = (hand, Level) => {
   
   hands.style.display = "none";  
   results.style.visibility = "visible";
 
-  // set user Image
+  // Set user Image
   userPick.src = handOptions[hand];
 
-  // select function depending on the Level to choose CpHand randomly
+  // Select function depending on the Level to choose CpHand randomly
   if (Level==1){
     cpHand = pickComputerHandL1();
   } else{
@@ -49,29 +49,29 @@ const playUserHand = (hand, Level) => {
     referee(hand, cpHand);
 };
 
-//randomly choose cp hand L1
+// Randomly choose cp hand L1
 const pickComputerHandL1 = () => {
   let handsOpts = ['rock', 'paper', 'scissors'];
   let cpHand = handsOpts[Math.floor(Math.random() * handsOpts.length)];
 
-  // set computer image accordingly
+  // Set computer image accordingly
   cpPick.src = handOptions[cpHand];
 
   return cpHand;
 };
 
-//randomly choose cp hand L2
+// Randomly choose cp hand L2
 const pickComputerHandL2 = () => {
   let handsOpts = ['rock', 'paper', 'scissors', 'spock', 'lizard'];
   let cpHand = handsOpts[Math.floor(Math.random() * handsOpts.length)];
 
-  // set computer image accordingly
+  // Set computer image accordingly
   cpPick.src = handOptions[cpHand];
 
   return cpHand;  
 };
 
-// result - tie, win and lose;
+// Result - tie, win and lose;
 const referee = (userHand, cpHand) => {
 
   if (userHand == cpHand) {
@@ -82,11 +82,11 @@ const referee = (userHand, cpHand) => {
     SCORE=SCORE + 1;
     setScore(SCORE,"scoreUser");
 
-    //Display final pop-up - You win - Limit 3 rounds
-    if(SCORE==3){
+  // Display final pop-up - You win - Limit 3 rounds
+  if(SCORE==3){
       gameOverPopUp.style.display = "block";
       youWinImg.style.display = "block";
-    }
+  }
 
   }
   else {
@@ -104,20 +104,20 @@ const referee = (userHand, cpHand) => {
 
 //Pop-up getting elements & necessary functions
 
-// get necessary Pop-up elements
-//  get the Pop-up
+// Get necessary Pop-up elements
+//  Get the Pop-up
 var gameOverPopUp = document.getElementById("gameOverPopUp");
 
-// get the <span> element that redirects the player home
+// Get the <span> element that redirects the player home
 var goHomeLink = document.getElementsByClassName("goHome")[0];
 
-// get Image you Lose
+// Get Image you Lose
 var youLoseImg = document.getElementById("youLoseImg");
 
-// get Image you Win
+// Get Image you Win
 var youWinImg = document.getElementById("youWinImg");
 
-//if error occurrs ignore
+//If error occurrs ignore
 try {
   // go Home function
   goHomeLink.onclick = function() {
@@ -126,22 +126,21 @@ try {
   };
 }
 catch (e) {
-  //not in the correct page--ignore
+  // Not in the correct page--ignore
 };
-//Play & Score Functions
 
-//function to restart game
+// Function to restart game
 const restartGame = () => {
   results.style = "results";
   hands.style="hands";
 };
 
-//Function to set the decision
+// Function to set the decision
 const setDecision = (decision, style) => {
   document.querySelector(".score-results h1").innerText = decision;
 };
 
-//Function to set the score
+// Function to set the score
 const setScore = (newScore, id) => {
   document.getElementById(id).innerText = newScore;
 };
