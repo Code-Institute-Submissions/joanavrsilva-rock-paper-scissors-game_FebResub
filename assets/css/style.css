@@ -8,7 +8,12 @@
 
   body {
     font-family: "Roboto", sans-serif;
-    background-color:#2b2e53;
+    background:url(/assets/images/fire-and-water-hands-background-image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    overflow: hidden;
   }
 
   .title {
