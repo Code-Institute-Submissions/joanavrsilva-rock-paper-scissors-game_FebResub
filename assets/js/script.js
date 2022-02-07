@@ -113,11 +113,9 @@ var goHomeLink = document.getElementsByClassName("goHome")[0];
 
 // Get Image you Lose
 var youLoseImg = document.getElementById("youLoseImg");
-document.write("Hello!")
 
 // Get Image you Win
 var youWinImg = document.getElementById("youWinImg");
-document.write("heloo")
 
 //If error occurrs ignore
 try {
