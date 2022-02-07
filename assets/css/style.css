@@ -66,7 +66,7 @@
     margin-right: auto;
     width: 100%;
     display: block;
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgba(0, 0, 0, 0.8);
     border-radius: 25px;    
   }
 
@@ -112,7 +112,7 @@
     font-weight: 400;
     color:white;
     border: 1px solid white;
-    background-color: rgb(92, 2, 2, 0.9);
+    background-color: rgb(92, 2, 2, 0.8);
 	  background-image: black;
 	  box-shadow: 0 0.5rem 0.75rem 0 rgb(216, 203, 206),
 							0 -0.25rem 0.75rem rgb(216, 203, 206) inset,
@@ -130,7 +130,7 @@
     font-weight: 400;
     color:white;
     border: 1px solid white;
-    background-color: rgb(92, 2, 2, 0.9);
+    background-color: rgb(92, 2, 2, 0.8);
 	  background-image: black;
 	  box-shadow: 0 0.5rem 0.75rem 0 rgb(216, 203, 206),
 							0 -0.25rem 0.75rem rgb(216, 203, 206) inset,
