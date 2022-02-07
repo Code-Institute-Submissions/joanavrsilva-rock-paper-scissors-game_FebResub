@@ -146,8 +146,15 @@
     line-height: 1rem;
     font-size: 1rem;
     font-weight: 400;
-    color:black;
     margin-bottom: 20px;
+    color:white;
+    border: 1px solid white;
+    background-color: rgba(2, 21, 65, 0.8);
+	  background-image: black;
+	  box-shadow: 0 0.5rem 0.75rem 0 rgb(216, 203, 206),
+							0 -0.25rem 0.75rem rgb(216, 203, 206) inset,
+							0 0.75rem 0.75rem rgb(216, 203, 206) inset,
+							0 0.25rem 0.75rem 0 rgb(216, 203, 206)inset;
   }
 
   button span {
