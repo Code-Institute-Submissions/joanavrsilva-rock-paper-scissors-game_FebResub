@@ -69,6 +69,28 @@ The Home(page) contains:
 * This game level has based on the Big Bang Theory series game version;
 ![Screenshot (226)](https://user-images.githubusercontent.com/83631970/134316463-f2f49673-19ff-4403-8ba6-dd8f046a41ea.png).
 
+# Tecnologies Used
+HTML5 
+* Structure language
+Balsamiq
+* Wireframe tool
+CSS
+* Style language
+Favicon.io
+* Favicon generator
+Font Awesome
+* Social links icons
+Git
+* Version control sytem tracking
+GitHub
+* Software hosting platform
+Gitpod
+* Development hosting platform
+Google fonts
+* Font resource
+Javascript
+* Object-oriented computer programming language used to create interactive effects.
+
 ### Testing
 #### Code Validation
 * CSS
@@ -107,15 +129,3 @@ The steps to deploy are as follows:
     * Favicon generator - https://favicon.io/favicon-converter/.
 * Level 2
     * The Big Bang Theory game of Rock, Paper, Scissors, Lizard and Spock.
-
-
-
-
-### Tecnologies Used
-* HTML5 
-* CSS
-* Git
-* GitHub
-* Gitpod
-* Google fonts
-* Javascript
