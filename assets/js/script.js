@@ -85,7 +85,7 @@ const referee = (userHand, cpHand) => {
   // Display final pop-up - You win - Limit 3 rounds
   if(SCORE==3){
       gameOverPopUp.style.display = "block";
-      youWinImg.style.display = "block";
+      youWin.style.display = "block";
   }
 
   }
@@ -97,7 +97,7 @@ const referee = (userHand, cpHand) => {
     //Display final pop-up - You lose - Limit 3 rounds
     if(SCORECP==3){
       gameOverPopUp.style.display = "block";
-      youLoseImg.style.display = "block";
+      youLose.style.display = "block";
     }
   }
 };
@@ -112,10 +112,10 @@ var gameOverPopUp = document.getElementById("gameOverPopUp");
 var goHomeLink = document.getElementsByClassName("goHome")[0];
 
 // Get Image you Lose
-var youLoseImg = document.getElementById("youLoseImg");
+var youLose = document.getElementById("youLose");
 
 // Get Image you Win
-var youWinImg = document.getElementById("youWinImg");
+var youWin = document.getElementById("youWin");
 
 //If error occurrs ignore
 try {
