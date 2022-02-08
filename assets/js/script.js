@@ -5,7 +5,7 @@ const handOptions = {
   'scissors': "assets/images/hand-scissors.png",
   'spock': "assets/images/hand-spock.png",
   'lizard': "assets/images/hand-lizard.png",
-}
+};
 
 // Winning matches
 const handWins = {
@@ -133,7 +133,7 @@ catch (e) {
 const restartGame = () => {
   results.style = "results";
   hands.style="hands";
-};
+}
 
 // Function to set the decision
 const setDecision = (decision, style) => {
