@@ -126,8 +126,8 @@ Finally, instructions on how to play the game are available.
 
 ## Home
 The Home(page) contains:
-* A navigation menu on the right side with acess to Home and Instructions pages;
-* A title;
+* A navigation menu on the right side with access to Home and Instructions pages;
+* A welcome message;
 * Two versions game play buttons: Classic and The Big Bang Theory;
 
 ![homepage-responsive-image](https://user-images.githubusercontent.com/83631970/152954242-bae47f8f-5591-4a96-bb9e-cfbbe8b315f1.png)
@@ -238,7 +238,7 @@ The steps to deploy are as follows:
 * In the GitHub repository, I navigate to the Settings tab;
 * From the source section drop-down menu, I select the Main Branch;
 * Once the master branch has been selected, the page refreshed with a detailed ribbon display to indicate the successful deployment;
-* The site is published at (https://joanavrsilva.github.io/rock-paper-scissors-game).
+* The site is published [here](https://joanavrsilva.github.io/rock-paper-scissors-game).
 
 [Back to Table of contents](#table-of-contents)
 ___
@@ -250,7 +250,7 @@ ___
     * I used the material and lessons taught in the Code Institute course;
     * I used the Clever Programmer project as inspiration;
     * W3school material;
-    * Buttons - Codepen.io styles inspiration.
+    * Buttons - [Codepen.io](https://codepen.io/) styles inspiration.
 * Images
     * Clipartmax;
     * Pixabay.
