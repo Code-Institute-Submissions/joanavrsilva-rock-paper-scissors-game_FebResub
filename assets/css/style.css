@@ -18,7 +18,8 @@
   .title {
     text-align: center;
     padding-top: 60px;
-    color: white
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
 /*Bar navigation menu*/  
@@ -202,9 +203,7 @@
 /*How to play rock paper scissors game*/
 .how-play {
   text-align: center;
-  margin-top: 30px;
   color: white;
-  padding-top: 20px;
   font-size: large;
   margin-left: auto;
   margin-right: auto;
@@ -271,7 +270,7 @@
   .your-score {
     padding: 0 40px 0 40px;
     text-align: center;
-    background-color:rgb(84, 130, 53) ;
+    background-color:rgb(183 96 28);
     border: 1px solid white;
     color: white;
     border-radius: 8px;
@@ -281,7 +280,7 @@
   .computer-score {
     padding: 0 25px 0 25px;
     text-align: center;
-    background-color:rgb(177, 38, 63);
+    background-color: rgb(80 127 137);
     border: 1px solid white;
     color: white;
     border-radius: 8px;
@@ -490,6 +489,7 @@
   padding: 2%;
   color:rgb(253, 249, 249);
   background-color:rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
 }
 /*Media queries for mobiles view*/
   @media only screen and (max-width: 480px) {
