@@ -17,123 +17,123 @@
 </head>
 <body>
 
-    <header>
-        <!--Navigation menu-->
-        <nav>
-           <ul id="menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="how-to-play.html">Instructions</a></li>
-           </ul>
-        </nav>
-     </header>
+   <header>
+      <!--Navigation menu-->
+      <nav>
+         <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-to-play.html">Instructions</a></li>
+         </ul>
+      </nav>
+   </header>
 
-     <!--Level 2 title-->
-     <div class="title">
-        <H1>The Big Bang Theory</H1>
-     </div>
+   <!--The Big Bang Theory title-->
+   <div class="title">
+      <H1>The Big Bang Theory</H1>
+   </div>
 
-     <!--Score area-->
-     <div class="score">
-        <table class="table-score">
-           <tr>
-              <th class="your-score">Your score</th>
-              <th class="computer-score">Computer Score</th>
-        </tr>
-           <tr>
-              <td class="score-results" id="scoreUser">0</td>
-              <td class="score-results" id="scoreCP">0</td>
-           </tr>
-        </table>
-     </div>
+   <!--Score area-->
+   <div class="score">
+      <table class="table-score">
+         <tr>
+            <th class="your-score">Your score</th>
+            <th class="computer-score">Computer Score</th>
+         </tr>
+         <tr>
+            <td class="score-results" id="scoreUser">0</td>
+            <td class="score-results" id="scoreCP">0</td>
+         </tr>
+      </table>
+   </div>
 
-      <!--Game area-->
-      <table class="hands" id="hands">
-        <tr>
-           <td class="hands-option">
-              <img src="assets/images/hand-paper.png" onclick="playUserHand('paper',2)" title="paper" class="hand" alt="hands-option">
-           </td>
-           <td class="hands-option">
-              <img src="assets/images/hand-scissors.png" onclick="playUserHand('scissors',2)" title="scissors" class="hand" alt="hands-option">
-           </td>
-           <td class="hands-option">
-              <img src="assets/images/hand-rock.png" onclick="playUserHand('rock',2)" title="rock" class="hand" alt="hands-option">
-           </td>
-        </tr>
-        <tr>
-           <td class="hands-option">
-              <img src="assets/images/hand-lizard.png" onclick="playUserHand('lizard',2)" title="lizard" class="hand" alt="hands-option">
-           </td>
-           <td class="hands-option">
-              <img src="assets/images/thinking.png" alt="hands-option">
-           </td>
-           <td class="hands-option">
-              <img src="assets/images/hand-spock.png" onclick="playUserHand('spock',2)" title="spock" class="hand" alt="hands-option">
-           </td>
-        </tr>
-     </table>
-        
-      <!--the user and the computer choices-->
-      <table class="results" id="results">
-        <tr>
-           <th class="your-score">Your choice</th>
-           <th ></th>
-           <th class="computer-score">Computer choice</th>
-           </tr>
-           <tr>
-           <td class="score-results">
-              <img src="assets/images/hand-paper.png" title="paper" class="hand" id="userPickImage" alt="score-results">
-           </td>
-           <td class="score-results">
-              <h1 class="decision">You win this round</h1>
-                 <button class="button-play-again" onclick="restartGame()">Play again</button>
-           </td>
-           <td class="score-results">
-              <img src="assets/images/hand-rock.png" title="rock" class="hand" id="computerPickImage" alt="score-results">
-           </td>
-        </tr>
-     </table>
-     
-      <!-- pop-up image after 3 points in the scoreboard -->
-      <div id="gameOverPopUp" class="gameOverPopUp">
-
-         <!-- modal content -->
-         <div class="gameOverPopUp-content">
-            <span class="goHome">Exit</span>
-            <br>
-
-            <!-- You lose Pop-up elements -->
-            <span id="youLoseImg" class="youLose centerPopUp" alt="youLoseImg">Sorry...You lose...Do you want try again?</span>
-         
-            <!--Pop-up button for play level 1 or level 2-->
-            <span id="youWinImg" class="youWin centerPopUp" alt="youWinImg">Congratulations!!!YOU WIN!!!Do you want try win again?</span>
-            <br>
-            <button class="button-level1 centerPopUp" onclick="location.href='level1.html'">Play Again </button>
-         </div>
-      </div>
+   <!--Game area-->
+   <table class="hands" id="hands">
+      <tr>
+         <td class="hands-option">
+            <img src="assets/images/hand-paper.png" onclick="playUserHand('paper',2)" title="paper" class="hand" alt="hands-option">
+         </td>
+         <td class="hands-option">
+            <img src="assets/images/hand-scissors.png" onclick="playUserHand('scissors',2)" title="scissors" class="hand" alt="hands-option">
+         </td>
+         <td class="hands-option">
+            <img src="assets/images/hand-rock.png" onclick="playUserHand('rock',2)" title="rock" class="hand" alt="hands-option">
+         </td>
+      </tr>
+      <tr>
+         <td class="hands-option">
+            <img src="assets/images/hand-lizard.png" onclick="playUserHand('lizard',2)" title="lizard" class="hand" alt="hands-option">
+         </td>
+         <td class="hands-option">
+            <img src="assets/images/thinking.png" alt="hands-option">
+         </td>
+         <td class="hands-option">
+            <img src="assets/images/hand-spock.png" onclick="playUserHand('spock',2)" title="spock" class="hand" alt="hands-option">
+         </td>
+      </tr>
+   </table>
       
-       <!--footer and social links-->
-  <footer id="footer navbar-fixed-bottom">
-   <ul class="social-networks">
-       <li>
-           <a href="https://facebook.com" target="_blank" rel="noopener"
-           aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-       </li>
-       <li>
-           <a href="https://twitter.com" target="_blank" rel="noopener"
-           aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-       </li>
-       <li>
-           <a href="https://youtube.com" target="_blank" rel="noopener"
-           aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-       </li>  
-       <li>
-           <a href="https://instagram.com" target="_blank" rel="noopener"
-           aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
-       </li>
-   </ul>
- </footer>
+   <!--User and computer choices-->
+   <table class="results" id="results">
+      <tr>
+         <th class="your-score">Your choice</th>
+         <th ></th>
+         <th class="computer-score">Computer choice</th>
+         </tr>
+         <tr>
+         <td class="score-results">
+            <img src="assets/images/hand-paper.png" title="paper" class="hand" id="userPickImage" alt="score-results">
+         </td>
+         <td class="score-results">
+            <h1 class="decision">You win this round</h1>
+               <button class="button-play-again" onclick="restartGame()">Play again</button>
+         </td>
+         <td class="score-results">
+            <img src="assets/images/hand-rock.png" title="rock" class="hand" id="computerPickImage" alt="score-results">
+         </td>
+      </tr>
+   </table>
+     
+   <!-- Pop-up image after 3 points in the scoreboard -->
+   <div id="gameOverPopUp" class="gameOverPopUp">
 
- <!-- font awesome and javascrpit script -->
+      <!-- Modal content -->
+      <div class="gameOverPopUp-content">
+         <span class="goHome">Exit</span>
+         <br>
+
+         <!-- You lose Pop-up elements -->
+         <span id="youLoseImg" class="youLose centerPopUp" alt="youLoseImg">Sorry...You lose...Do you want try again?</span>
+      
+         <!--Pop-up button for play the same gameS again-->
+         <span id="youWinImg" class="youWin centerPopUp" alt="youWinImg">Congratulations!!!YOU WIN!!!Do you want try win again?</span>
+         <br>
+         <button class="button-level1 centerPopUp" onclick="location.href='level1.html'">Play Again </button>
+      </div>
+   </div>
+      
+   <!--Footer and social links-->
+   <footer id="footer navbar-fixed-bottom">
+      <ul class="social-networks">
+         <li>
+            <a href="https://facebook.com" target="_blank" rel="noopener"
+            aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+         </li>
+         <li>
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+            aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+         </li>
+         <li>
+            <a href="https://youtube.com" target="_blank" rel="noopener"
+            aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+         </li>  
+         <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener"
+            aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+         </li>
+      </ul>
+   </footer>
+
+ <!-- Font awesome and javascrpit script -->
  <script src="https://kit.fontawesome.com/32b30530a0.js" crossorigin="anonymous"></script>
  <script src="assets/js/script.js"></script>
 </body>
