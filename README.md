@@ -58,6 +58,8 @@ The website is designed to be simple, captivating and user-friendly in different
 I used website wireframe.cc to create a wireframe.
 
 ![Wireframes](md_images/wireframes.png)
+[Project 2 - wireframe.zip](https://github.com/joanavrsilva/game-p2/files/8020205/Project.2.-.wireframe.zip)
+
 
 
 ## Design
