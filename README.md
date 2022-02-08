@@ -118,7 +118,8 @@ The website consists of four pages: Home, Instrucions, Classic(Level 1) and The 
 
 ## Footer
 * The Footer is consistent on all pages. 
-* It has social links on the center and each link open in a separate tab in a browser.
+* It has social links on the center.
+* Each link open in a separate tab in a browser.
 
 
 ## Home

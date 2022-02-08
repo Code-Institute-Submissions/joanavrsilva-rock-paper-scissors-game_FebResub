@@ -204,7 +204,7 @@
   text-align: center;
   margin-top: 30px;
   color: white;
-  padding-top: 80px;
+  padding-top: 20px;
   font-size: large;
   margin-left: auto;
   margin-right: auto;
@@ -470,6 +470,27 @@
     font-size: x-large;
   }
   
+/* Footer and social links*/
+/* Footer */
+#footer {
+  height: 100px;
+}
+
+.social-networks {
+  text-align: center;
+}
+
+.social-networks > li {
+  display: inline;
+}
+
+.social-networks i {
+  font-size: 150%;
+  margin: 2%;
+  padding: 2%;
+  color:rgb(253, 249, 249);
+  background-color:rgba(0, 0, 0, 0.8);
+}
 /*Media queries for mobiles view*/
   @media only screen and (max-width: 480px) {
   
