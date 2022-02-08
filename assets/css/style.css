@@ -217,6 +217,10 @@
   text-align:center;
 }
 
+.instructions_list {
+  list-style-type: none;
+  }
+
  /*Scoreboard */
   .scoreboard {
     width: 700px;
