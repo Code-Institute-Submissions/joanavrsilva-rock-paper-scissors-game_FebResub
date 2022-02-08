@@ -55,10 +55,23 @@ The website is designed to be simple, captivating and user-friendly in different
 
 ## Wireframes
 
-I used website wireframe.cc to create a wireframe.
+I used balsamiq to create the wireframes
 
-![Wireframes](md_images/wireframes.png)
-[Project 2 - wireframe.zip](https://github.com/joanavrsilva/game-p2/files/8020205/Project.2.-.wireframe.zip)
+* Homepage
+![Homepage](https://user-images.githubusercontent.com/83631970/152908699-57a974a3-d460-4f89-813e-a95f161284dc.png)
+
+* The Game area: Classic version and The Big Bang Theory version
+![Game play and score area](https://user-images.githubusercontent.com/83631970/152908899-b6326af6-22ac-405f-97c0-2d5abd109ae5.png)
+
+* Pop-message: Win and Lose
+![Pop-up message](https://user-images.githubusercontent.com/83631970/152908974-b9961efb-b797-49fd-aeae-358ed5bd9a32.png)
+9ae5.png)
+
+* Instructions page
+![Instructions page](https://user-images.githubusercontent.com/83631970/152909045-cb152707-adcf-4ef3-81ed-c4a9a9c454b0.png)
+
+
+Wireframes zip: [Project 2 - wireframe.zip](https://github.com/joanavrsilva/game-p2/files/8020205/Project.2.-.wireframe.zip)
 
 
 
